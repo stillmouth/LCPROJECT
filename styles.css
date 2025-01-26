@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Top Horizontal Panel */
+  #top-panel {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-evenly; /* Space buttons evenly */
+    align-items: stretch;
+    height: 50px; /* Adjust the height of the panel */
+  }
+  
+  .top {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top:hover {
+    background-color: #555;
+  }
+  
+  /* Container for left and main panels */
+  #content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Left Vertical Panel */
+  #category-panel {
+    background-color: #f4f4f4;
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .category {
+    width: 100%;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category:hover {
+    background-color: #ccc;
+  }
+  
+  /* Main Content Area */
+  #main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  
+  /* Additional styling for buttons */
+  button:focus {
+    outline: none;
+  }
+  

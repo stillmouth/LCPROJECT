@@ -21,7 +21,9 @@ app.on("ready", () => {
     });
 
     Menu.setApplicationMenu(null);
-    mainWindow.loadFile('index.html');
+    mainWindow.loadFile('index.html').catch(err => {
+        console.error("Failed to load index.html:", err);
+    });
 
     mainWindow.on("closed", () => {
         mainWindow = null;
@@ -42,6 +44,8 @@ app.on("activate", () => {
                 nodeIntegration: true,
             },
         });
-        mainWindow.loadFile('index.html');
+        mainWindow.loadFile('index.html').catch(err => {
+            console.error("Failed to load index.html:", err);
+        });
     }
 });

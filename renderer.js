@@ -12,17 +12,42 @@ ipcRenderer.on('update-content-response', (event, contentType) => {
   if (contentType === 'Burgers') {
     mainContent.innerHTML = `
       <h2>Burgers</h2>
-      <p>This is the content for Burgers. SHOW ALL THE ITEMS IN BURGERS</p>
+      <p>Chicken Burger, Chicken Cheese Burger, Veg Burger</p>
     `;
   } else if (contentType === 'Milkshakes') {
     mainContent.innerHTML = `
       <h2>Milkshakes</h2>
-      <p>This is the content for Milkshakes. SHOW ALL THE ITEMS IN MILKSHAKES</p>
+      <p>Vanilla Milkshake, Strawberry Milkshake, Chocolate Milkshake, Oreo Milkshake</p>
     `;
-  } else if (contentType === 'Icecreams') {
+  } else if (contentType === 'Momos') {
     mainContent.innerHTML = `
-      <h2>Ice Creams</h2>
-      <p>This is the content for Ice Creams. SHOW ALL THE ITEMS IN ICECREAMS</p>
+      <h2>Momos</h2>
+      <p>Chicken momos, veg momos, peri peri momos, paneer momos</p>
+    `;
+  } else if (contentType === 'Wraps') {
+    mainContent.innerHTML = `
+      <h2>Wraps</h2>
+      <p>Chicken Wrap, Veg Wrap, Paneer Wrap</p>
+    `;
+  } else if (contentType === 'Pops') {
+    mainContent.innerHTML = `
+      <h2>Pops</h2>
+      <p>Chicken Pops, Chicken Cheese Pops, Veg Pops</p>
+    `;
+  } else if (contentType === 'Fries') {
+    mainContent.innerHTML = `
+      <h2>Fries</h2>
+      <p>Regular Fries, Peri Peri Fries</p>
+    `;
+  } else if (contentType === 'Cold Coffee') {
+    mainContent.innerHTML = `
+      <h2>Cold Coffee</h2>
+      <p>Hard Rock Coffee, Black Mafia, Coffee on the rocks</p>
+    `;
+  } else if (contentType === 'Lassi') {
+    mainContent.innerHTML = `
+      <h2>Lassi</h2>
+      <p>Lassi, Mango Lassi, Black Currant Lassi, Banana Lassi</p>
     `;
   } else if (contentType === 'Home') {
     mainContent.innerHTML = `
